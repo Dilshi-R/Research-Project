@@ -438,10 +438,7 @@ for (ct in top_names) {
 dev.off()
 
 # 18. Differential expression in top cell types
-# NOTE:
-# This is Seurat cell-level DE and is acceptable for
-# exploratory analysis. For a stronger final analysis,
-# pseudobulk by patient is preferred.
+
 
 DefaultAssay(query_obj) <- "RNA"
 Idents(query_obj) <- "group"
